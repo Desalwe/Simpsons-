@@ -1,5 +1,6 @@
 import React from "react";
-// src/Quotes.js
+import Quote from "./Quote"
+
 const quotes = [
   {
     quote:
@@ -29,13 +30,18 @@ const quotes = [
    }
 ];
 
-const Quotes = () => (
-  <div>
-    {quotes.map(quote => (
-      // eslint-disable-next-line jsx-a11y/alt-text
-      <img src={quote.image}/>
-    ))}
-  </div>
-);
+const Quotes = () => {
+  return(
+    <div>
+      {quotes.map(quote => (
+      < Quote
+        image={quote.image}
+        quote={quote.quote}
+        character={quote.character}
+      />
+      ))}
+    </div>
+  )
+ }
 
 export default Quotes;

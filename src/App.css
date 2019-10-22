@@ -20,3 +20,19 @@
 .App-link {
   color: #09d3ac;
 }
+
+.App-title{
+  color: white;
+}
+.App-title2{
+  color: yellow;
+}
+
+.isWorkingButton {
+  font-size: 70%;
+  color: white;
+  background: green;
+  border-style: none; 
+  padding: 1%;
+}
+
